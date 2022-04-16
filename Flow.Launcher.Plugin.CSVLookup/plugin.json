@@ -1,0 +1,12 @@
+{
+    "ID": "4CD621FD-809D-4C04-84CC-2C7225B99301",
+    "ActionKeyword": "cl",
+    "Name": "CSV Lookup",
+    "Description": "Lookup information from your own .csv files",
+    "Author": "andrew-mi",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/andrew-mi/Flow.Launcher.Plugin.CSVLookup",
+    "IcoPath": "icon.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.CSVLookup.dll"
+}

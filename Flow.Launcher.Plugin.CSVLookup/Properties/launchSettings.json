@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Flow.Launcher.Plugin.CSVLookup": {
+      "commandName": "Project"
+    }
+  }
+}

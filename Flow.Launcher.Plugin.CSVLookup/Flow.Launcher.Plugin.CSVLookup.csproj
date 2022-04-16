@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <AssemblyName>Flow.Launcher.Plugin.CSVLookup</AssemblyName>
+    <PackageId>Flow.Launcher.Plugin.CSVLookup</PackageId>
+    <Authors>andrew-mi</Authors>
+    <PackageProjectUrl>https://github.com/andrew-mi/Flow.Launcher.Plugin.CSVLookup</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/andrew-mi/Flow.Launcher.Plugin.CSVLookup</RepositoryUrl>
+    <PackageTags>flow-launcher flow-plugin</PackageTags>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="plugin.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flow.Launcher.Plugin" Version="2.1.1" />
+    <PackageReference Include="MiniExcel" Version="1.26.0" />
+  </ItemGroup>
+
+</Project>
